@@ -69,17 +69,15 @@
 
             </div>
 
-            <div class="navbar-nav">
-                <a href="logout" class="nav-item nav-link">LOGOUT</a> &nbsp
-                <a href="/aboutus" class="nav-item nav-link">About Us</a>
-                <a href="contactus" class="nav-item nav-link">Contact Us</a>
-                <form action="/action_page.php">
-                  <div class="search-container">
-                  <input type="text" placeholder="Search.." name="search">
-                  <!--<button type="submit"><i class="fa fa-search"></i></button>-->
-                <button type="submit"><i class="fa fa-search"></i></button>
-              </form>
-            </div>
+        <div class="navbar-nav">
+            <a href="logout" class="nav-item nav-link">LOGOUT</a> &nbsp
+            <a href="/aboutus" class="nav-item nav-link">About Us</a>
+            <a href="contactus" class="nav-item nav-link">Contact Us</a>
+            <form action="{% url 'search-book' %}" method="GET" class="form-inline text-dark">
+              <input type="text" name="book_name" id="" class="form-control">
+      <input type="submit" value="Search" class="btn btn-primary" placeholder="search books..">
+          </form>
+        </div>
         </div>
     </nav>
 </div>
