@@ -44,6 +44,8 @@ urlpatterns = [
     path('update-book/<int:book_id>/',views.UpdateBookView,name='update-book'),
     #delete book view
     path('deletebook/<int:book_id>/',views.DeleteBookView,name='delete-book'),
+    #search book view
+    path('search/',views.SearchBookView,name='search-book'),
     #path('viewbook', views.viewbook_view,name='library/viewbook.html'),
     path('issuebook', views.issuebook_view),
     path('viewissuedbook', views.viewissuedbook_view),
